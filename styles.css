@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 6.5rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav h2 {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+#item {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#item li {
+  margin-left: 40px;
+}
+
+#item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#item li a:hover {
+  color: #ff80ab;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.back {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #00c9ff, #ff80ab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.mid {
+  z-index: 2;
+  text-align: center;
+}
+
+.mid p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.mid h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.mid a, .mid button {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.9rem 1.6rem;
+  margin: 0.5rem;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mid a:hover, .mid button:hover {
+  background: #fff;
+  color: #ff80ab;
+  border-color: #fff;
+}
+
+/* DETAILS SECTION */
+.details {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111;
+  color: white;
+  padding: 6rem 7rem;
+  flex-wrap: wrap;
+}
+
+.details div {
+  width: 47%;
+}
+
+.details h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details h4 {
+  font-size: 1rem;
+  color: #ff80ab;
+  margin-bottom: 0.5rem;
+}
+
+.details p {
+  font-size: 1.05rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.details button {
+  padding: 0.8rem 1.4rem;
+  border: 2px solid #ff80ab;
+  background: transparent;
+  color: #ff80ab;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.details button:hover {
+  background: #ff80ab;
+  color: #fff;
+}
+
+/* TRAINER SECTION */
+.trainer {
+  padding: 5rem 7rem;
+  background-color: #fafafa;
+}
+
+.trainer .about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.trainer .about p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.people {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.team1 {
+  width: 48%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.teamDetails {
+  padding: 1rem;
+}
+
+.teamDetails h4 {
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.teamDetails p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* CLASSES SECTION */
+.class {
+  text-align: center;
+  padding: 4rem 2rem 1rem;
+}
+
+.class .h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.class .p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.classMenu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 6rem;
+}
+
+.team {
+  width: 30%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+  padding: 0 1rem;
+}
+
+.name h4 {
+  font-size: 1.2rem;
+}
+
+.name span {
+  font-weight: 600;
+}
+
+.num {
+  background: #ff80ab;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.pro {
+  font-size: 0.95rem;
+  color: #666;
+  padding: 1rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 7rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact .form,
+.contact .map {
+  width: 48%;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+}
+
+.contact button, .contact a {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  background: #ff80ab;
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.contact a:hover, .contact button:hover {
+  background: #111;
+  cursor: grab;
+}
+.contact a:active, .contact button:active {
+  content: "Sending...";
+}
+
+/* FOOTER */
+.footer {
+  background-color: #111;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: #ff80ab;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.backToTop {
+  font-size: 2rem;
+  background: #ff80ab;
+  color: white;
+  padding: 0.6rem 0.6rem;
+  border-radius: 50%;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .nav {
+    padding: 1rem 2rem;
+    position: fixed;
+
+  }
+
+  .classMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team {
+    width: 80%;
+  }
+
+  .details,
+  .trainer,
+  .contact {
+    flex-direction: column;
+  }
+
+  .details div,
+  .trainer .about,
+  .contact .form,
+  .contact .map {
+    width: 100%;
+  }
+
+  .people {
+    flex-direction: column;
+  }
+
+  .team1 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    position: relative;
+  }
+  iframe {
+    width:100%;
+  }
+}
