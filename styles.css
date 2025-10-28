@@ -95,6 +95,7 @@ body {
 
 .mid a, .mid button {
   text-decoration: none;
+  font-size: medium;
   font-weight: 600;
   padding: 0.9rem 1.6rem;
   margin: 0.5rem;
